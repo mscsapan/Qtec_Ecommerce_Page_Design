@@ -30,33 +30,3 @@ class NetworkApi {
     return getProduct();
   }
 }
-
-/*class NetworkService {
-  final String uri =
-      'https://panel.primebazar.com/api/product-core/suzuki-gsx-r150-fi-dual-channel-abs-yvj2/0/?format=json';
-
-  Future<Product> product() async {
-    http.Response response = await http.get(Uri.parse(uri));
-    if (response.statusCode == 200) {
-      Map<String, dynamic> data = jsonDecode(response.body);
-      final Product _product = Product.fromJson(data);
-      return _product;
-    }
-    return product();
-
-    */ /*try {
-      http.Response response = await http.get(Uri.parse(uri));
-      if (response.statusCode == 200) {
-        Map<String, dynamic> data = jsonDecode(response.body);
-        final Product _product = Product.fromJson(data);
-        return _product;
-      }
-    } on SocketException catch (e) {
-      throw Exception('SocketException found ${e.message}');
-    } on FormatException catch (e) {
-      throw Exception('FormatException found ${e.message}');
-    } catch (e) {
-      throw Exception('Others Exceptions Found ${e.toString()}');
-    }*/ /*
-  }
-}*/
