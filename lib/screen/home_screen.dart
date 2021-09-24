@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: Colors.transparent,
           elevation: 0.0),
       body: _loading
-          ? const Center(child: Text('Loading'))
+          ? const Center(child: CircularProgressIndicator())
           : FutureBuilder<List<Product>>(
               future: api.getProduct(),
               builder: (context, AsyncSnapshot<List<Product>> snapshot) {

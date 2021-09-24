@@ -1,8 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.qtech_task">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <application
         android:usesCleartextTraffic="true"
-        android:label="qtech_task"
+        android:label="Qtec Task"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
